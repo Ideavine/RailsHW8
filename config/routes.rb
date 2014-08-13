@@ -1,4 +1,35 @@
 Rails.application.routes.draw do
+
+  root 'welcome#index'
+
+  get 'posts/create'
+
+  get 'posts/edit'
+
+  get 'posts/update'
+
+  get 'posts/delete'
+
+  get 'posts/show'
+
+  get 'posts/index'
+
+  get 'posts/new'
+
+  get 'users/create'
+
+  get 'users/edit'
+
+  get 'users/update'
+
+  get 'users/delete'
+
+  get 'users/show'
+
+  get 'users/index'
+
+  get 'users/new'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -54,3 +85,19 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
 end
+
+#    Prefix Verb URI Pattern             Controller#Action
+# posts_create GET  /posts/create(.:format) posts#create
+#   posts_edit GET  /posts/edit(.:format)   posts#edit
+# posts_update GET  /posts/update(.:format) posts#update
+# posts_delete GET  /posts/delete(.:format) posts#delete
+#   posts_show GET  /posts/show(.:format)   posts#show
+#  posts_index GET  /posts/index(.:format)  posts#index
+#    posts_new GET  /posts/new(.:format)    posts#new
+# users_create GET  /users/create(.:format) users#create
+#   users_edit GET  /users/edit(.:format)   users#edit
+# users_update GET  /users/update(.:format) users#update
+# users_delete GET  /users/delete(.:format) users#delete
+#   users_show GET  /users/show(.:format)   users#show
+#  users_index GET  /users/index(.:format)  users#index
+#    users_new GET  /users/new(.:format)    users#new
